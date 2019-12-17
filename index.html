@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Convert an Excel Column Name to Column Number and vice versa in an easy, free and automated way" />
+  <title>Excel Column Name Number Converter</title>
+  <link rel="stylesheet" href="css/output.css" type="text/css" />
+</head>
+
+<body>
+  <nav class="flex justify-center bg-green-700 p-6 shadow">
+    <div class="text-white mr-6">
+      <span class="font-semibold text-xl tracking-tight ">
+        Excel Column Converter
+      </span>
+    </div>
+  </nav>
+  <div class="container m-auto">
+    <div class="mt-10 flex flex-col">
+      <span>Simply convert an Excel <b>column name</b> in its <b>position number</b> and vice versa.</span>
+      <span>Type the desired value in one of the fields, the other will show the conversion automatically!</span>
+    </div>
+    <div class="bg-gray-200 rounded-lg mt-10 shadow-md">
+      <form class="p-4">
+        <div>
+          <label class="block" for="letters">
+            <span class="text-gray-700">Column Name</span>
+            <input class="form-input mt-1 block w-full uppercase" id="letters" pattern="[a-zA-Z]*" maxlength="10" />
+          </label>
+        </div>
+        <div class="mt-4">
+          <label class="block" for="number">
+            <span class="text-gray-700">Column Number</span>
+            <input class="form-input mt-1 block w-full" id="number" pattern="[0-9]*" />
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <script src="excel-converter.js"></script>
+  </footer>
+</body>
+
+</html>
