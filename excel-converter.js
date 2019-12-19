@@ -11,6 +11,10 @@ function letterReducer(sum, letter, i) {
 }
 
 function lettersToNumber() {
+  if (letters.value == "") {
+    number.value = "";
+    return;
+  }
   number.value = letters.value
     .toUpperCase()
     .split("")
